@@ -19,7 +19,7 @@ import plotly.express as px
 
 # Flask Setup
 app = Flask(__name__, static_folder='static', )
-CORS(app, supports_credentials=True, origins=["http://127.0.0.1:5500"])
+CORS(app, supports_credentials=True, origins=["https://pandam-vilai.onrender.com"])
 app.secret_key = 'your_secret_key'
 
 # MongoDB Setup
