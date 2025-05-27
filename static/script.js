@@ -5,10 +5,10 @@ let predictionChartInstance; // Store chart instance for updates
 // Tab navigation functions
 function openTab(event, tabId) {
     // Uncomment the following code if you want to restrict access to logged-in users only
-    //if ((tabId === 'insight' || tabId === 'prediction' || tabId === 'dashboard') && !isLoggedIn) {
-      //   alert("Please log in to access this section.");
-        // return; // Prevent access if not logged in
-     //}
+    if ((tabId === 'insight' || tabId === 'prediction' || tabId === 'dashboard') && !isLoggedIn) {
+         alert("Please log in to access this section.");
+         return; // Prevent access if not logged in
+     }
 
     document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
     document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
