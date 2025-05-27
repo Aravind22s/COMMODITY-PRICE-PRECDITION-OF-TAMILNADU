@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const endpoint = isSignup ? "signup" : "login";
 
-        fetch(`hhttps://pandam-vilai.onrender.com/${endpoint}`, {
+        fetch(`https://pandam-vilai.onrender.com/${endpoint}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: 'include',
