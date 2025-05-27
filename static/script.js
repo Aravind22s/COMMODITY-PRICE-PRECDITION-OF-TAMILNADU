@@ -47,7 +47,7 @@ function openDashboard() {
          alert("Please log in to access the dashboard.");
          return;
      }
-    window.open("http://127.0.0.1:5000/dashboard/", "_blank");  // opens DASHBOARD in new tab
+    window.open("https://pandam-vilai.onrender.com/dashboard/", "_blank");  // opens DASHBOARD in new tab
 }
 
 // Update username display in account menu
