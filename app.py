@@ -30,9 +30,9 @@ db1 = client['auth_db']
 users_collection = db1['users']
 
 # Load model and column order
-with open(r"C:\Users\aravi\AI ML project\Prediction\models\xgboost_model.pkl", "rb") as model_file:
+with open(r"models\xgboost_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
-with open(r"C:\Users\aravi\AI ML project\Prediction\models\column_order.pkl", "rb") as columns_file:
+with open(r"models\column_order.pkl", "rb") as columns_file:
     column_order = pickle.load(columns_file)
 
 # Historical data for dashboard
@@ -346,4 +346,5 @@ def logout():
     return redirect(url_for("index"))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
