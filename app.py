@@ -30,9 +30,9 @@ db1 = client['auth_db']
 users_collection = db1['users']
 
 # Load model and column order
-with open(r"models\xgboost_model.pkl", "rb") as model_file:
+with open(r"models/xgboost_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
-with open(r"models\column_order.pkl", "rb") as columns_file:
+with open(r"models/column_order.pkl", "rb") as columns_file:
     column_order = pickle.load(columns_file)
 
 # Historical data for dashboard
