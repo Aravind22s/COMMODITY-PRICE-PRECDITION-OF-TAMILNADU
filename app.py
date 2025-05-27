@@ -36,7 +36,7 @@ with open(r"models/column_order.pkl", "rb") as columns_file:
     column_order = pickle.load(columns_file)
 
 # Historical data for dashboard
-df_hist = pd.read_csv(r'c:\Users\aravi\AI ML project\model_&_training\filtered_apr2024_to_2025.csv')
+df_hist = pd.read_csv(r'filtered_apr2024_to_2025.csv')
 df_hist['Arrival_Date'] = pd.to_datetime(df_hist['Arrival_Date'])
 df_hist['Year'] = df_hist['Arrival_Date'].dt.year
 df_hist['Month'] = df_hist['Arrival_Date'].dt.month
