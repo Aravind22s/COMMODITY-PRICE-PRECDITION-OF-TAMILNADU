@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("http://127.0.0.1:5000/predict", {
+        fetch("https://pandam-vilai.onrender.com/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: 'include',
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const endpoint = isSignup ? "signup" : "login";
 
-        fetch(`http://127.0.0.1:5000/${endpoint}`, {
+        fetch(`hhttps://pandam-vilai.onrender.com/${endpoint}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: 'include',
